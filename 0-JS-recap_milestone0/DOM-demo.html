@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM-demo</title>
+
+    <style>
+      body {
+        background-color: blanchedalmond;
+        font-family: "Open Sans", "Helvetica Neue", sans-serif;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Demonstration of creating HTML with JavaScript and DOM-manipulation</h1>
+
+    <!-- can be used later for todo list -->
+    <ul id="list"></ul>
+
+    <script>
+      // DOM manipulation demo
+
+      // simple p, simple h3
+      const redP = document.createElement("p");
+      redP.textContent = "Hey I'm red!";
+      redP.style.color = "red";
+      document.body.append(redP);
+
+      const blueH3 = document.createElement("h3");
+      blueH3.textContent = "I'm a blue h3!";
+      blueH3.style.color = "blue";
+      document.body.append(blueH3);
+
+      // make div
+      const pinkDiv = document.createElement("div");
+      pinkDiv.style.backgroundColor = "pink";
+      //pinkDiv.style.height = "30px"
+      pinkDiv.style.border = "2px green solid";
+
+      document.body.append(pinkDiv);
+
+      // append elements to new Div
+      const h1InDiv = document.createElement("h1");
+      h1InDiv.textContent = "I'm in a div";
+      pinkDiv.append(h1InDiv);
+
+      const pInDiv = document.createElement("p");
+      pInDiv.textContent = "ME TOO!";
+      pinkDiv.append(pInDiv);
+
+      // now let's create a counter here
+      const counterDiv = document.createElement("div");
+      counterDiv.innerHTML = `
+  <h2>Counter: <span id="count">0</span></h2>
+  <button id="increment">+1</button>
+  <button id="decrement">-1</button>
+  <button id="reset">Reset</button>
+`;
+      document.body.append(counterDiv);
+      
+      // let count = 0  // default starting point when not using localStorage
+
+      // localStorage
+      let count = parseInt(localStorage.getItem("counter")) || 0;
+      const countEl = document.getElementById("count");
+
+      document.getElementById("increment").onclick = () => {
+        count++;
+        countEl.textContent = count;
+        localStorage.setItem("counter", count);
+      };
+
+      document.getElementById("decrement").onclick = () => {
+        count--;
+        countEl.textContent = count;
+        localStorage.setItem("counter", count);
+      };
+
+      document.getElementById("reset").onclick = () => {
+        count = 0;
+        countEl.textContent = count;
+        localStorage.removeItem("counter");
+      };
+
+      countEl.textContent = count;
+    </script>
+  </body>
+</html>
