@@ -1,0 +1,29 @@
+.
+├── eslint.config.js
+├── folder-structure.txt
+├── index.html
+├── package.json
+├── package-lock.json
+├── public
+│   ├── favicon.svg
+│   └── icons.svg
+├── README.md
+├── src
+│   ├── App.css
+│   ├── App.jsx
+│   ├── assets
+│   │   ├── hero.png
+│   │   ├── react.svg
+│   │   └── vite.svg
+│   ├── components
+│   │   ├── Logger.jsx
+│   │   ├── ProductCard.jsx
+│   │   ├── ProductList.jsx
+│   │   └── ProductListLoading.jsx
+│   ├── data
+│   │   └── products.js
+│   ├── index.css
+│   └── main.jsx
+└── vite.config.js
+
+6 directories, 21 files
