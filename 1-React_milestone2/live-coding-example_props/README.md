@@ -181,4 +181,4 @@ This makes the output more predictable when some props are missing.
 
 ## Setup
 
-See `setup.md` for creating a React project with Vite from scratch.
+See [`setup.md`](../setup.md) for creating a React project with Vite from scratch.
