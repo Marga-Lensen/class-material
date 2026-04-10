@@ -1,5 +1,7 @@
 # Class Material
 
+**Disclaimer**: Personal teaching supplements by Marga Lensen, not official ReDI School curriculum. Main course materials: [ReDI-School/fullstack_bootcamp](https://github.com/ReDI-School/fullstack_bootcamp). Always pull official updates first.
+
 This repository contains our class material for the JavaScript recap and the React lessons so far (last updated: April 5, 2026).
 
 New material will be added incrementally after each class.
