@@ -21,32 +21,38 @@ The repo is meant as a demo project that combines these concepts in a simple and
 ```txt
 .
 ├── eslint.config.js
+├── folder-structure.txt
 ├── index.html
 ├── package.json
 ├── package-lock.json
 ├── public
-│   ├── favicon.svg
-│   └── icons.svg
+│   ├── favicon.svg
+│   └── icons.svg
 ├── README.md
 ├── src
-│   ├── App.css
-│   ├── App.jsx
-│   ├── assets
-│   │   ├── hero.png
-│   │   ├── react.svg
-│   │   └── vite.svg
-│   ├── components
-│   │   ├── Logger.jsx
-│   │   ├── ProductCard.jsx
-│   │   ├── ProductList.jsx
-│   │   └── ProductListLoading.jsx
-│   ├── data
-│   │   └── products.js
-│   ├── index.css
-│   └── main.jsx
+│   ├── App.css
+│   ├── App.jsx
+│   ├── assets
+│   │   ├── backpack.png
+│   │   ├── headphones.png
+│   │   ├── hero.png
+│   │   ├── keyboard.png
+│   │   ├── react.svg
+│   │   ├── smart-bottle.png
+│   │   └── vite.svg
+│   ├── components
+│   │   ├── Logger.jsx
+│   │   ├── ProductCard.jsx
+│   │   ├── ProductList.jsx
+│   │   └── ProductListLoading.jsx
+│   ├── data
+│   │   └── products.js
+│   ├── index.css
+│   └── main.jsx
+├── tree.txt
 └── vite.config.js
 
-6 directories, 20 files
+6 directories, 26 files
 ```
 
 </details>

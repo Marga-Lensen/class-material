@@ -17,22 +17,22 @@ function App() {
         <ProductCard
           title="Wireless Headphones"
           price={79.99}
-          image="https://picsum.photos/seed/headphones/300/200"
+          image="../src/assets/headphones.png"
         />
         <ProductCard
           title="Mechanical Keyboard"
           price={99.99}
-          image="https://picsum.photos/seed/keyboard/300/200"
+          image="../src/assets/keyboard.png"
         />
         <ProductCard
           title="Smart Water Bottle"
           price={24.99}
-          image="https://picsum.photos/seed/bottle/300/200"
+          image="../src/assets/smart-bottle.png"
         />
         <ProductCard
           title="Backpack"
           price={49.99}
-          image="https://picsum.photos/seed/backpack/300/200"
+          image="../src/assets/backpack.png"
         />
       </div>
       <hr />
